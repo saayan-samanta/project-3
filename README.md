@@ -1,139 +1,91 @@
-# E-Commerce Retail Exploratory Data Analysis (EDA)
+# 🛒 E-Commerce Retail Exploratory Data Analysis
 
-## 📌 Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Manipulation-150458?style=for-the-badge&logo=pandas">
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Seaborn-Visualization-4C72B0?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter">
+</p>
 
-This project performs an in-depth Exploratory Data Analysis (EDA) on an e-commerce retail dataset to uncover patterns, trends, customer behavior, and business insights.
+---
 
-The analysis focuses on understanding sales performance, customer segments, product categories, pricing, discounts, payment methods, delivery performance, and return behavior.
+## 📊 Project Overview
+
+This project presents an end-to-end **Exploratory Data Analysis (EDA)** of an e-commerce retail dataset containing **100,000 transactions**.
+
+The analysis explores customer behavior, product performance, revenue generation, pricing patterns, discounts, payment preferences, delivery performance, and return behavior to uncover meaningful business insights from raw transactional data.
+
+> **From raw e-commerce data to actionable business insights.**
 
 ---
 
 ## 🎯 Project Objective
 
-The main objectives of this project are to:
+The primary objective of this project is to understand the factors influencing e-commerce sales and customer behavior through data analysis and visualization.
 
-- Understand the structure and quality of the dataset.
-- Analyze customer and product-level patterns.
-- Identify sales and revenue trends.
-- Study customer segment behavior.
-- Analyze the relationship between pricing, discounts, and order value.
-- Examine payment methods and shipping performance.
-- Identify important relationships between numerical and categorical features.
-- Generate meaningful business insights through data visualization.
+### Key Questions Explored
 
----
-
-## 📊 Dataset Overview
-
-The dataset contains e-commerce retail transaction records with information related to:
-
-- Customer demographics
-- Customer segments
-- Product categories
-- Product pricing
-- Quantity purchased
-- Discounts
-- Payment methods
-- Shipping types
-- Delivery duration
-- Return status
-
-### Dataset Size
-
-- **100,000 records**
-- **18 features**
+- Which product categories generate the highest revenue?
+- Which customer segments contribute most to overall revenue?
+- How do product price and quantity influence final order value?
+- Do higher discounts result in higher purchase quantities?
+- Which payment methods are preferred across product categories?
+- How do shipping types compare in terms of delivery time?
+- Which age groups contribute the most revenue?
+- What relationships exist between numerical features?
+- Are there any significant outliers or data quality issues?
 
 ---
 
-## 🔍 Analysis Performed
+## 📁 Dataset Overview
 
-### 1. Data Understanding
+| Attribute | Details |
+|---|---|
+| 📌 Records | 100,000 |
+| 📌 Features | 18 |
+| 📌 Data Type | E-commerce Transactional Data |
+| 📌 Time Period | January 2023 – December 2025 |
+| 📌 Domain | Retail & E-commerce |
 
-- Dataset structure
-- Data types
-- Statistical summary
-- Missing value analysis
-- Duplicate value analysis
+### Dataset Features
 
-### 2. Data Cleaning
-
-- Date format conversion
-- Data type correction
-- Outlier detection
-- IQR-based outlier capping
-
-### 3. Univariate Analysis
-
-Analysis of:
-
-- Age
-- Gender
-- State
-- Product Category
-- Customer Segment
-- Payment Method
-- Shipping Type
-- Return Status
-- Order Date
-
-### 4. Bivariate Analysis
-
-Relationships analyzed between:
-
-- Product Category and Revenue
-- Customer Segment and Revenue
-- Payment Method and Revenue
-- Shipping Type and Delivery Days
-- Gender and Purchase Amount
-- Return Status and Revenue
-- Age and Final Price
-
-### 5. Multivariate Analysis
-
-Explored relationships between multiple variables using:
-
-- Correlation Matrix
-- Heatmaps
-- Pivot Tables
-- Scatter Plots with Hue
-- Category-wise comparisons
+- `customer_id`
+- `age`
+- `gender`
+- `city`
+- `state`
+- `customer_segment`
+- `order_id`
+- `order_date`
+- `product_category`
+- `product_subcategory`
+- `product_price`
+- `quantity`
+- `discount_percentage`
+- `final_price`
+- `payment_method`
+- `shipping_type`
+- `delivery_days`
+- `return_status`
 
 ---
 
-## 📈 Key Insights
-
-- **Product categories generate relatively similar revenue, with Home & Kitchen contributing slightly more.**
-- **Regular customers contribute the highest revenue, followed by Premium and New customers.**
-- **Both genders contribute relatively equally to the customer base and overall purchases.**
-- **Grocery has the highest average discount, while Electronics has the lowest.**
-- **Higher product prices and quantities generally lead to higher final order values.**
-- **Product price alone does not strongly influence total quantity sold across categories.**
-- **Home & Kitchen records the highest total quantity sold.**
-- **Credit Card and UPI are among the most preferred payment methods.**
-- **Standard and Express shipping show similar average delivery durations.**
-- **Most orders are not returned, indicating generally positive customer satisfaction.**
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-
----
-
-## 📂 Project Structure
+## 🔍 Analysis Workflow
 
 ```text
-ecommerce-retail-eda/
-│
-├── data/
-├── notebooks/
-├── visualizations/
-├── reports/
-├── README.md
-└── requirements.txt
+Raw Dataset
+     ↓
+Data Understanding
+     ↓
+Data Cleaning & Preparation
+     ↓
+Univariate Analysis
+     ↓
+Bivariate Analysis
+     ↓
+Multivariate Analysis
+     ↓
+Statistical Analysis
+     ↓
+Business Insights
